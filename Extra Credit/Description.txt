@@ -1,0 +1,33 @@
+The pokemon.py Python script contained in this directory loads the accompanying pokemon.csv file and runs an interactive, 
+menu-based program to perform several searching and statistical functions on the data. I loved Pokemon as a kid (I grew up 
+with the Gen 1 games and by the time 2/3 came around I was into other games, so I never took the time to learn any other 
+characters aside from the original 151. Now as a father to a young son, I see him playing Pokemon games and watching movies 
+and it brings me back - back to the days of playing the old brick Game Boy. When I saw the pokemon.csv file included with 
+Module 1, I got excited to see how we'd use it in a Lab or homework. Then we didn't, so I knew that if I attempted this 
+extra credit assignment it would involve Pokemon some way or another. With that said, I'll talk about what the script does. 
+I developed the script one menu option at a time, because I wasn't sure what I wanted it to do. I'd write a section, debug 
+it, then start thinking about the next one. This way, whenever I decided to stop I would have a completed program.
+The script opens with an ASCII drawing of the Pokemon logo. If I had enough time on my hands, I'd import the ASCII drawing 
+database and include an option to draw pictures of Pokemon. I didn't, so it doesn't. What it does, however, is present 10 
+options for the user:
+1. Random Pokemon: It picks a random Pokedex number from 1-721 (through Gen 6) and displays the number and name of that 
+random Pokemon.
+2. List by Type: Presents the 18 possible Pokemon types and asks the user to pick one. It then searches the csv file for 
+any Pokemon where the Type 1 matches the user's pick.
+3. List by Generation Number: Asks the user to pick a generation number and displays the Pokemon from that generation.
+4. List of starter Pokemon by generation: Also asks the user to pick a generation number, then displays the three starters 
+(plus Pikachu from Gen 1) from that picked generation.
+5. Sort by Stats: Searches the csv file for all stats: Total, HP, Attack, Defense, Sp. Attack, Sp. Defense, and Speed to 
+find which Pokemon have the highest value for each stat and which have the lowest.
+6. Legendaries: Searches the csv for any legendary Pokemon in the list.
+7. Count Primary types: Counts the number of Pokemon according to primary type (Type 1), then returns a list of the types 
+along with the final count.
+8. Statistics: This one is broken down further into 3 options. The first option looks at the legendary Pokemon and returns 
+the average Speed and Total ratings for all the legendary Pokemon. Option 2 looks at Defense, Attack, Speed, and Total 
+ratings according to type and returns the primary type with the highest average rating for each of the four stats. Option 
+3 is similar, but only looks at Gen 1 Pokemon: it returns the types with the highest average Sp. Defense and Sp. Attack 
+for Gen 1 Pokemon. 
+9. See the Logo: This one was for my son: He liked looking at the header with the logo so I moved it to a method so I could 
+call it at will.
+10. My crew: This one searches the csv file for Pokemon that match my crew from the original Game Boy game and returns the 
+results.
